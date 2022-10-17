@@ -6,6 +6,10 @@ export const HomeContainer = styled('main', {
   maxWidth: 'calc(100vw - ((100vw - 1080px) / 2))',
   marginLeft: 'auto',
   minHeight: 656,
+
+  '@desktopHeight': {
+    minHeight: 350,
+  },
 });
 
 export const Product = styled('a', {
@@ -21,6 +25,11 @@ export const Product = styled('a', {
 
   img: {
     objectFit: 'cover',
+
+    '@desktopHeight': {
+      width: 350,
+      height: 350,
+    },
   },
 
   footer: {
